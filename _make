@@ -1,0 +1,15 @@
+#!/bin/sh
+export JAVA_HOME=/var/lib/flatpak/app/com.google.AndroidStudio/current/active/files/extra/android-studio/jbr
+
+cd /home/user/StudioProjects/shellexec.apk
+## build ## take up to 16 minutes ## assembleRelease ## cleanBuildCache
+./gradlew assembleRelease && "/home/user/Android/Sdk/build-tools/34.0.0/apksigner" sign \
+ --verbose \
+ --ks /home/user/.android/quoinsight.apk.keystore.jks \
+ --ks-pass pass:android \
+ --key-pass pass:android \
+ --ks-key-alias upload \
+ --out shellexec.apk \
+ /home/user/StudioProjects/shellexec.apk/app/build/outputs/apk/release/app-release-unsigned.apk \
+&& mv shellexec.apk ./www
+
