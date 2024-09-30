@@ -1,0 +1,2830 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.2.1" type="baseline" client="gradle" dependencies="false" name="AGP (8.2.1)" variant="all" version="8.2.1">
+
+    <issue
+        id="MissingPermission"
+        message="Call requires permission which may be rejected by user: code should explicitly check to see if permission is available (with `checkPermission`) or explicitly handle a potential `SecurityException`"
+        errorLine1="          gLocMgr.requestLocationUpdates(gLocPrvdr, 5000, 50, locListener);"
+        errorLine2="          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/CompassCfgActivity.java"
+            line="289"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="MissingPermission"
+        message="Call requires permission which may be rejected by user: code should explicitly check to see if permission is available (with `checkPermission`) or explicitly handle a potential `SecurityException`"
+        errorLine1="      return locMgr.getLastKnownLocation(prvdr);"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/sysUtil.java"
+            line="347"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="ScrollViewSize"
+        message="This LinearLayout should use `android:layout_height=&quot;wrap_content&quot;`"
+        errorLine1="    android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot;"
+        errorLine2="                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="22"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="ScrollViewSize"
+        message="This LinearLayout should use `android:layout_height=&quot;wrap_content&quot;`"
+        errorLine1="    android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot;"
+        errorLine2="                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="22"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="ScrollViewSize"
+        message="This LinearLayout should use `android:layout_height=&quot;wrap_content&quot;`"
+        errorLine1="    android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot;"
+        errorLine2="                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/listcfgactivity.xml"
+            line="22"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="ScrollViewSize"
+        message="This EditText should use `android:layout_width=&quot;wrap_content&quot;`"
+        errorLine1="        android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/listcfgactivity.xml"
+            line="40"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="ScrollViewSize"
+        message="This LinearLayout should use `android:layout_height=&quot;wrap_content&quot;`"
+        errorLine1="    android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot;"
+        errorLine2="                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="22"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="      gLocPrvdr = radioButton.getText().toString().toLowerCase();"
+        errorLine2="                                                   ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/CompassActivity.java"
+            line="311"
+            column="52"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="        gSensorType = radioButton.getText().toString().toLowerCase();"
+        errorLine2="                                                       ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/CompassActivity.java"
+            line="344"
+            column="56"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="              r.setChecked( r.getText().toString().toLowerCase().equals(gSensorType) );"
+        errorLine2="                                                   ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/CompassActivity.java"
+            line="552"
+            column="52"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="      gLocPrvdr = radioButton.getText().toString().toLowerCase();"
+        errorLine2="                                                   ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/CompassCfgActivity.java"
+            line="279"
+            column="52"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="        gSensorType = radioButton.getText().toString().toLowerCase();"
+        errorLine2="                                                       ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/CompassCfgActivity.java"
+            line="302"
+            column="56"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="              r.setChecked( r.getText().toString().toLowerCase().equals(gSensorType) );"
+        errorLine2="                                                   ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/CompassCfgActivity.java"
+            line="479"
+            column="52"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="      commonGui.writeMessage(MainActivity.this, &quot;MainActivity.stopOnTimeout&quot;, &quot;Stopping in next &quot; + String.format(&quot;%.1f&quot;, (timeout/60000.0)) + &quot; minute(s) ...&quot;);"
+        errorLine2="                                                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/MainActivity.java"
+            line="112"
+            column="101"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="    String url = s_url.trim().toLowerCase();"
+        errorLine2="                              ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/commonUtil.java"
+            line="269"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="      String contentType = urlConn.getContentType().toLowerCase();"
+        errorLine2="                                                    ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/commonUtil.java"
+            line="322"
+            column="53"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="      icyData.put(&quot;content-type&quot;, urlConn.getContentType().toLowerCase());"
+        errorLine2="                                                           ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/commonUtil.java"
+            line="433"
+            column="60"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="Call requires API level 34 (current min is 26): `android.app.Service#onTimeout`"
+        errorLine1="          myAudioService.this.onTimeout(6500);"
+        errorLine2="                              ~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/myAudioService.java"
+            line="366"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="Call requires API level 28 (current min is 26): `android.media.AudioManager#getStreamMinVolume`"
+        errorLine1="      int minVol = audMgr.getStreamMinVolume(android.media.AudioManager.STREAM_MUSIC);"
+        errorLine2="                          ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/sysUtil.java"
+            line="111"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="Call requires API level 28 (current min is 26): `android.media.AudioManager#getStreamMinVolume`"
+        errorLine1="      int minVol = audMgr.getStreamMinVolume(android.media.AudioManager.STREAM_MUSIC);"
+        errorLine2="                          ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/sysUtil.java"
+            line="124"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="Call requires API level 28 (current min is 26): `android.media.AudioManager#getStreamMinVolume`"
+        errorLine1="      int minVol = audMgr.getStreamMinVolume(android.media.AudioManager.STREAM_MUSIC);"
+        errorLine2="                          ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/sysUtil.java"
+            line="147"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="NotificationPermission"
+        message="When targeting Android 13 or higher, posting a permission requires holding the `POST_NOTIFICATIONS` permission (usage from com.google.android.exoplayer2.offline.DownloadService.ForegroundNotificationUpdater)">
+        <location
+            file="src/main/AndroidManifest.xml"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 (was -1)"
+        errorLine1="              -1 // this is a custom requestCode allowing the program to match this in the callback function"
+        errorLine2="              ~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/CompassActivity.java"
+            line="329"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="SuspiciousIndentation"
+        message="Suspicious indentation: This is indented but is not nested under the previous expression (`if (azimuth > 180) c`...)"
+        errorLine1="                    captionHtml = &quot;#&quot; + commonUtil.getDateStr(&quot;ss&quot;) + &quot;: &quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/CompassActivity.java"
+            line="411"
+            column="21"/>
+        <location
+            file="src/main/java/com/quoinsight/minimal/CompassActivity.java"
+            line="410"
+            column="19"
+            message="Previous statement here"/>
+    </issue>
+
+    <issue
+        id="SuspiciousIndentation"
+        message="Suspicious indentation: This is indented but is not nested under the previous expression (`if (azimuth > 180) c`...)"
+        errorLine1="                    captionHtml = &quot;#&quot; + commonUtil.getDateStr(&quot;ss&quot;) + &quot;: &quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/CompassCfgActivity.java"
+            line="376"
+            column="21"/>
+        <location
+            file="src/main/java/com/quoinsight/minimal/CompassCfgActivity.java"
+            line="375"
+            column="19"
+            message="Previous statement here"/>
+    </issue>
+
+    <issue
+        id="SuspiciousIndentation"
+        message="Suspicious indentation: This is indented but is not continuing the previous expression (`timeoutHandler = new`...)"
+        errorLine1="        timeoutHandler.postDelayed(new Runnable(){@Override public void run(){ // !! must use this to avoid issue for UI thread !!"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/MainActivity.java"
+            line="102"
+            column="9"/>
+        <location
+            file="src/main/java/com/quoinsight/minimal/MainActivity.java"
+            line="101"
+            column="7"
+            message="Previous statement here"/>
+    </issue>
+
+    <issue
+        id="SuspiciousIndentation"
+        message="Suspicious indentation: This is indented but is not continuing the previous expression (`this.mTimeoutHandler`...)"
+        errorLine1="      this.mTimeoutHandler.postDelayed(new Runnable(){@Override public void run(){ // !! must use this to avoid issue for UI thread !!"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/myAudioService.java"
+            line="176"
+            column="7"/>
+        <location
+            file="src/main/java/com/quoinsight/minimal/myAudioService.java"
+            line="175"
+            column="5"
+            message="Previous statement here"/>
+    </issue>
+
+    <issue
+        id="WrongConstant"
+        message="Must be one of: Service.START_STICKY_COMPATIBILITY, Service.START_STICKY, Service.START_NOT_STICKY, Service.START_REDELIVER_INTENT"
+        errorLine1="    return 0;"
+        errorLine2="           ~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/myAudioService.java"
+            line="631"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="ForegroundServiceType"
+        message="To call `Service.startForeground()`, the `&lt;service>` element of manifest file must have the `foregroundServiceType` attribute specified"
+        errorLine1="    myAudioService.this.startForeground(ntfnID, builder.build()); // this shows in lockscreen correctly"
+        errorLine2="                        ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/myAudioService.java"
+            line="100"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="QueryPermissionsNeeded"
+        message="As of Android 11, this method no longer returns information about all apps; \&#xA;see https://g.co/dev/packagevisibility for details"
+        errorLine1="      : pkgMgr.getInstalledApplications(android.content.pm.PackageManager.GET_META_DATA)"
+        errorLine2="               ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/sysUtil.java"
+            line="192"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.appcompat:appcompat than 1.0.2 is available: 1.6.1"
+        errorLine1="  implementation &apos;androidx.appcompat:appcompat:1.0.2&apos;"
+        errorLine2="                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="28"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 1.1.3 is available: 2.1.4"
+        errorLine1="  implementation &apos;androidx.constraintlayout:constraintlayout:1.1.3&apos;"
+        errorLine2="                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="29"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.google.android.material:material than 1.1.0-alpha04 is available: 1.11.0"
+        errorLine1="  implementation &apos;com.google.android.material:material:1.1.0-alpha04&apos;"
+        errorLine2="                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="31"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.core:core than 1.8.0 is available: 1.12.0"
+        errorLine1="  implementation &apos;androidx.core:core:1.8.0&apos;"
+        errorLine2="                 ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="34"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.media:media than 1.6.0 is available: 1.7.0"
+        errorLine1="  implementation &apos;androidx.media:media:1.6.0&apos;"
+        errorLine2="                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="35"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="GradleDynamicVersion"
+        message="Avoid using + in version numbers; can lead to unpredictable and unrepeatable builds (com.google.android.exoplayer:exoplayer-core:2.18.+)"
+        errorLine1="  implementation &quot;com.google.android.exoplayer:exoplayer-core:2.18.+&quot;"
+        errorLine2="                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="37"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="SourceLockedOrientationActivity"
+        message="You should not lock orientation of your activities, so that you can support a good user experience for any device or orientation"
+        errorLine1="      setRequestedOrientation(android.content.pm.ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/CompassActivity.java"
+            line="367"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="SourceLockedOrientationActivity"
+        message="You should not lock orientation of your activities, so that you can support a good user experience for any device or orientation"
+        errorLine1="      setRequestedOrientation(android.content.pm.ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/CompassCfgActivity.java"
+            line="325"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="      android:text=&quot;Hello from CompassActivity!&quot; android:textSize=&quot;14dp&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="29"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="      android:textStyle=&quot;italic&quot; android:textSize=&quot;14dp&quot;"
+        errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="125"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="      android:text=&quot;Hello from CompassActivity!&quot; android:textSize=&quot;14dp&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="29"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="      android:textStyle=&quot;italic&quot; android:textSize=&quot;14dp&quot;"
+        errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="113"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="HardwareIds"
+        message="Using `getString` to get device identifiers is not recommended"
+        errorLine1="    return android.provider.Settings.Secure.getString("
+        errorLine2="           ^">
+        <location
+            file="src/main/java/com/quoinsight/minimal/sysUtil.java"
+            line="8"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="TrustAllX509TrustManager"
+        message="`checkClientTrusted` is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers"
+        errorLine1="        public void checkClientTrusted(java.security.cert.X509Certificate[] certs, String authType) { }"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/commonUtil.java"
+            line="93"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="TrustAllX509TrustManager"
+        message="`checkServerTrusted` is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers"
+        errorLine1="        public void checkServerTrusted(java.security.cert.X509Certificate[] certs, String authType) { }"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/commonUtil.java"
+            line="94"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="CustomX509TrustManager"
+        message="Implementing a custom `X509TrustManager` is error-prone and likely to be insecure. It is likely to disable certificate validation altogether, and is non-trivial to implement correctly without calling Android&apos;s default implementation."
+        errorLine1="      new javax.net.ssl.X509TrustManager() {   "
+        errorLine2="                        ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/commonUtil.java"
+            line="91"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="ExportedService"
+        message="Exported service does not require permission"
+        errorLine1="    &lt;service android:name=&quot;myAudioService&quot;"
+        errorLine2="     ~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="86"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="ReservedSystemPermission"
+        message="`android.permission.MEDIA_CONTENT_CONTROL` is a reserved permission"
+        errorLine1="  &lt;permission android:name=&quot;android.permission.MEDIA_CONTENT_CONTROL&quot; />"
+        errorLine2="                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="71"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="UnspecifiedImmutableFlag"
+        message="Missing `PendingIntent` mutability flag"
+        errorLine1="          this, 0, new android.content.Intent(this, MainActivity.class), 0"
+        errorLine2="                                                                         ~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/myAudioService.java"
+            line="74"
+            column="74"/>
+    </issue>
+
+    <issue
+        id="UnspecifiedImmutableFlag"
+        message="Missing `PendingIntent` mutability flag"
+        errorLine1="      parentContext, 0, new android.content.Intent(parentContext, targetClass), 0"
+        errorLine2="                                                                                ~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/sysUtil.java"
+            line="272"
+            column="81"/>
+    </issue>
+
+    <issue
+        id="UnspecifiedImmutableFlag"
+        message="Missing `PendingIntent` mutability flag"
+        errorLine1="    return android.app.PendingIntent.getService(parentContext, requestCode, intent, 0);"
+        errorLine2="                                                                                    ~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/sysUtil.java"
+            line="281"
+            column="85"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_alignParentTop`"
+        errorLine1="    android:layout_alignParentTop=&quot;true&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/calendaractivity.xml"
+            line="10"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="    android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/calendaractivity.xml"
+            line="11"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="    android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/calendaractivity.xml"
+            line="17"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="    android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/calendaractivity.xml"
+            line="24"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/calendaractivity.xml"
+            line="30"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_alignParentBottom`"
+        errorLine1="    android:layout_alignParentBottom=&quot;true&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/calendaractivity.xml"
+            line="50"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/calendaractivity.xml"
+            line="54"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/calendaractivity.xml"
+            line="60"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="27"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="44"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="51"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="57"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="63"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="87"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="111"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="117"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="123"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="131"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="27"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="44"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="51"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="57"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="81"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="105"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="111"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="119"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/listcfgactivity.xml"
+            line="27"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/listcfgactivity.xml"
+            line="55"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/listcfgactivity.xml"
+            line="62"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/listcfgactivity.xml"
+            line="68"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerVertical`"
+        errorLine1="    android:layout_gravity=&quot;center_vertical&quot; android:layout_centerVertical=&quot;true&quot;"
+        errorLine2="                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer.xml"
+            line="14"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerVertical`"
+        errorLine1="      android:layout_gravity=&quot;center_vertical&quot; android:layout_centerVertical=&quot;true&quot;"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="29"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="27"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="35"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerVertical`"
+        errorLine1="        android:layout_gravity=&quot;center_vertical&quot; android:layout_centerVertical=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="39"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="91"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="98"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="104"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteLayoutParam"
+        message="Invalid layout param in a `LinearLayout`: `layout_centerHorizontal`"
+        errorLine1="      android:layout_gravity=&quot;center_horizontal&quot; android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="110"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 26"
+        errorLine1="        if (android.os.Build.VERSION.SDK_INT >= 21)"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/MainActivity.java"
+            line="134"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 26"
+        errorLine1="    if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/commonGui.java"
+            line="31"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="StaticFieldLeak"
+        message="Do not place Android context classes in static fields (static reference to `MainActivity` which has field `txt2` pointing to `TextView`); this is a memory leak"
+        errorLine1="  private static MainActivity thisInstance;"
+        errorLine2="          ~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/MainActivity.java"
+            line="17"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="UseValueOf"
+        message="Use `Integer.valueOf(nextValue)` instead"
+        errorLine1="    return String.format(&quot;%0&quot;+String.valueOf(thisSeq.length())+&quot;d&quot;, new Object[]{new Integer(nextValue)});"
+        errorLine2="                                                                                 ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/commonUtil.java"
+            line="245"
+            column="82"/>
+    </issue>
+
+    <issue
+        id="InefficientWeight"
+        message="Use a `layout_height` of `0dp` instead of `match_parent` for better performance"
+        errorLine1="      android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot;"
+        errorLine2="                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="37"
+            column="43"/>
+    </issue>
+
+    <issue
+        id="InefficientWeight"
+        message="Use a `layout_height` of `0dp` instead of `match_parent` for better performance"
+        errorLine1="      android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot;"
+        errorLine2="                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="37"
+            column="43"/>
+    </issue>
+
+    <issue
+        id="InefficientWeight"
+        message="Use a `layout_height` of `0dp` instead of `match_parent` for better performance"
+        errorLine1="    android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot;"
+        errorLine2="                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/testactivity.xml"
+            line="9"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.compass` appears to be unused">
+        <location
+            file="src/main/res/drawable/compass.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.icon72` appears to be unused">
+        <location
+            file="src/main/res/drawable/icon72.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.mainplayer` appears to be unused"
+        errorLine1="&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/layout/mainplayer.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.xml.provider_paths` appears to be unused"
+        errorLine1="&lt;paths xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="src/main/res/xml/provider_paths.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/calendaractivity.xml"
+            line="22"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/calendaractivity.xml"
+            line="22"
+            column="76"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/calendaractivity.xml"
+            line="47"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="21"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="21"
+            column="76"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="    &lt;RadioGroup android:id=&quot;@+id/radioLocPrvdr&quot; xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="61"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="    &lt;RadioGroup android:id=&quot;@+id/radioSensorType&quot; xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="85"
+            column="51"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="21"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="21"
+            column="76"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="    &lt;RadioGroup android:id=&quot;@+id/radioLocPrvdr&quot; xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="55"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="    &lt;RadioGroup android:id=&quot;@+id/radioSensorType&quot; xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="79"
+            column="51"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/listcfgactivity.xml"
+            line="21"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/listcfgactivity.xml"
+            line="21"
+            column="76"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="7"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="7"
+            column="76"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="45"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="45"
+            column="76"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="104"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="104"
+            column="76"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="21"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="21"
+            column="76"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="    &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="32"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="    &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                                                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="32"
+            column="78"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace declaration xmlns:android; already declared on the root element"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/calendaractivity.xml"
+            line="22"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace declaration xmlns:tools; already declared on the root element"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/calendaractivity.xml"
+            line="22"
+            column="76"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace declaration xmlns:android; already declared on the root element"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/calendaractivity.xml"
+            line="47"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace declaration xmlns:android; already declared on the root element"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="21"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace declaration xmlns:tools; already declared on the root element"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="21"
+            column="76"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace declaration xmlns:android; already declared on the root element"
+        errorLine1="    &lt;RadioGroup android:id=&quot;@+id/radioLocPrvdr&quot; xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="61"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace declaration xmlns:android; already declared on the root element"
+        errorLine1="    &lt;RadioGroup android:id=&quot;@+id/radioSensorType&quot; xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="85"
+            column="51"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace declaration xmlns:android; already declared on the root element"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="21"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace declaration xmlns:tools; already declared on the root element"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="21"
+            column="76"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace declaration xmlns:android; already declared on the root element"
+        errorLine1="    &lt;RadioGroup android:id=&quot;@+id/radioLocPrvdr&quot; xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="55"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace declaration xmlns:android; already declared on the root element"
+        errorLine1="    &lt;RadioGroup android:id=&quot;@+id/radioSensorType&quot; xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="79"
+            column="51"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace declaration xmlns:android; already declared on the root element"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/listcfgactivity.xml"
+            line="21"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace declaration xmlns:tools; already declared on the root element"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/listcfgactivity.xml"
+            line="21"
+            column="76"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace declaration xmlns:android; already declared on the root element"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="7"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace declaration xmlns:tools; already declared on the root element"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="7"
+            column="76"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace declaration xmlns:android; already declared on the root element"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="45"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace declaration xmlns:tools; already declared on the root element"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="45"
+            column="76"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace declaration xmlns:android; already declared on the root element"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="104"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace declaration xmlns:tools; already declared on the root element"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="104"
+            column="76"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace declaration xmlns:android; already declared on the root element"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="21"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace declaration xmlns:tools; already declared on the root element"
+        errorLine1="  &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="21"
+            column="76"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace declaration xmlns:android; already declared on the root element"
+        errorLine1="    &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="32"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace declaration xmlns:tools; already declared on the root element"
+        errorLine1="    &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="                                                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="32"
+            column="78"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/compass.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/compass.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/compass_svg_out.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/compass_svg_out.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/icon.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/icon.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/icon72.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/icon72.png"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `9sp`"
+        errorLine1="      android:text=&quot;🌐&quot; android:textSize=&quot;9sp&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="58"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="      &lt;EditText android:id=&quot;@+id/edit1&quot;"
+        errorLine2="       ~~~~~~~~">
+        <location
+            file="src/main/res/layout/listcfgactivity.xml"
+            line="39"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="    &lt;EditText android:id=&quot;@+id/edit1&quot;"
+        errorLine2="     ~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="69"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="    &lt;EditText android:id=&quot;@+id/edit2&quot;"
+        errorLine2="     ~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="81"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        message="Custom view ``EditText`` has `setOnTouchListener` called on it but does not override `performClick`"
+        errorLine1="      edit1.setOnTouchListener(new android.view.View.OnTouchListener(){"
+        errorLine2="      ^">
+        <location
+            file="src/main/java/com/quoinsight/minimal/MainActivity.java"
+            line="270"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        message="`onTouch` should call `View#performClick` when a click is detected"
+        errorLine1="        @Override public boolean onTouch(android.view.View view, android.view.MotionEvent motionEvent) {"
+        errorLine2="                                 ~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/MainActivity.java"
+            line="271"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="    &lt;ImageView android:id=&quot;@+id/img1&quot;"
+        errorLine2="     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="36"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="    &lt;ImageView android:id=&quot;@+id/img1&quot;"
+        errorLine2="     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="36"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="  &lt;ImageView android:id=&quot;@+id/img1&quot;"
+        errorLine2="   ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/testactivity.xml"
+            line="8"
+            column="4"/>
+    </issue>
+
+    <issue
+        id="LabelFor"
+        message="Missing accessibility label: provide either a view with an `android:labelFor` that references this view or provide an `android:hint`"
+        errorLine1="      &lt;EditText android:id=&quot;@+id/edit1&quot;"
+        errorLine2="       ~~~~~~~~">
+        <location
+            file="src/main/res/layout/listcfgactivity.xml"
+            line="39"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="LabelFor"
+        message="Missing accessibility label: provide either a view with an `android:labelFor` that references this view or provide an `android:hint`"
+        errorLine1="    &lt;EditText android:id=&quot;@+id/edit1&quot;"
+        errorLine2="     ~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="69"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="LabelFor"
+        message="Missing accessibility label: provide either a view with an `android:labelFor` that references this view or provide an `android:hint`"
+        errorLine1="    &lt;EditText android:id=&quot;@+id/edit2&quot;"
+        errorLine2="     ~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="81"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="        txt1.setText(&quot;Hello from CompassActivity!\n[&quot; + commonUtil.getDateStr(&quot;yyyy-MM-dd HH:mm:ss&quot;) + &quot;]&quot;);"
+        errorLine2="                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/CompassActivity.java"
+            line="389"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="        txt1.setText(&quot;Hello from CompassCfgActivity!\n[&quot; + commonUtil.getDateStr(&quot;yyyy-MM-dd HH:mm:ss&quot;) + &quot;]&quot;);"
+        errorLine2="                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/CompassCfgActivity.java"
+            line="347"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="              btn.setText(&quot;[ click here when done ]&quot;);"
+        errorLine2="                          ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/CompassCfgActivity.java"
+            line="458"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="              btn.setText(&quot;ManualCorrection&quot;);"
+        errorLine2="                          ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/CompassCfgActivity.java"
+            line="466"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="        txt1.setText(&quot;Hello &quot; + sysUtil.getDeviceID(this) +  &quot; from ListCfgActivity!\n[&quot; + commonUtil.getDateStr(&quot;yyyy-MM-dd HH:mm:ss&quot;) + &quot;]&quot;);"
+        errorLine2="                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/ListCfgActivity.java"
+            line="50"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="        txt1.setText(&quot;Hello &quot; + sysUtil.getDeviceID(this) +  &quot; from ListCfgActivity!\n[&quot; + commonUtil.getDateStr(&quot;yyyy-MM-dd HH:mm:ss&quot;) + &quot;]&quot;);"
+        errorLine2="                     ~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/ListCfgActivity.java"
+            line="50"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="      txt2.setText(&quot;🔋&quot; + Integer.toString(sysUtil.getBatteryLevel(this)) + &quot;%&quot;);"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/MainActivity.java"
+            line="198"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Number formatting does not take into account locale settings. Consider using `String.format` instead."
+        errorLine1="      txt2.setText(&quot;🔋&quot; + Integer.toString(sysUtil.getBatteryLevel(this)) + &quot;%&quot;);"
+        errorLine2="                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/MainActivity.java"
+            line="198"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="      btnNext.setText(&quot;⎘ SysInfo ⓘ&quot;);"
+        errorLine2="                      ~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/MainActivity.java"
+            line="214"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="      btnCompass.setText(&quot;✳ Start Compass 🧭&quot;);"
+        errorLine2="                         ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/MainActivity.java"
+            line="225"
+            column="26"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="      btnTorch.setText(&quot;🔦 FlashLight ☼&quot;);"
+        errorLine2="                       ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/MainActivity.java"
+            line="236"
+            column="24"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="      button9.setText(&quot;⎊ Quit&quot;); // ⏻ ≡  [🚪←🚶] 𓁆 𝍇去 𝌶逃"
+        errorLine2="                      ~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/MainActivity.java"
+            line="252"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="      edit1.setText(&quot;testing ...&quot;);"
+        errorLine2="                    ~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/MainActivity.java"
+            line="269"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="    txt2.setText(&quot;🔋&quot; + Integer.toString(sysUtil.getBatteryLevel(this)) + &quot;%&quot;);"
+        errorLine2="                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/MainActivity.java"
+            line="511"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Number formatting does not take into account locale settings. Consider using `String.format` instead."
+        errorLine1="    txt2.setText(&quot;🔋&quot; + Integer.toString(sysUtil.getBatteryLevel(this)) + &quot;%&quot;);"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/MainActivity.java"
+            line="511"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="        txt1.setText(&quot;Hello &quot; + sysUtil.getDeviceID(this) +  &quot; from OtherActivity!\n[&quot; + commonUtil.getDateStr(&quot;yyyy-MM-dd HH:mm:ss&quot;) + &quot;]&quot;);"
+        errorLine2="                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/OtherActivity.java"
+            line="50"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="        txt1.setText(&quot;Hello &quot; + sysUtil.getDeviceID(this) +  &quot; from OtherActivity!\n[&quot; + commonUtil.getDateStr(&quot;yyyy-MM-dd HH:mm:ss&quot;) + &quot;]&quot;);"
+        errorLine2="                     ~~~~~~~~">
+        <location
+            file="src/main/java/com/quoinsight/minimal/OtherActivity.java"
+            line="50"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Hello from CalendarActivity!&quot;, should use `@string` resource"
+        errorLine1="    android:text=&quot;Hello from CalendarActivity!&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/calendaractivity.xml"
+            line="13"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;&lt;br>[ &lt;A href=&apos;https://ytliu0.github.io/ChineseCalendar/index_chinese.html&apos;>廖育棟&lt;/A> ] [ &lt;A href=&apos;http://en.nongli.info&apos;>nongli.info&lt;/A> ] [ &lt;A href=&apos;http://yun.rili.cn&apos;>万年历&lt;/A> ]&lt;br>&quot;, should use `@string` resource"
+        errorLine1="    android:text=&quot;&amp;lt;br&amp;gt;[ &amp;lt;A href=&apos;https://ytliu0.github.io/ChineseCalendar/index_chinese.html&apos;&amp;gt;廖育棟&amp;lt;/A&amp;gt; ] [ &amp;lt;A href=&apos;http://en.nongli.info&apos;&amp;gt;nongli.info&amp;lt;/A&amp;gt; ] [ &amp;lt;A href=&apos;http://yun.rili.cn&apos;&amp;gt;万年历&amp;lt;/A&amp;gt; ]&amp;lt;br&amp;gt;&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/calendaractivity.xml"
+            line="19"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;⏏ Close&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;⏏ Close&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/calendaractivity.xml"
+            line="56"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;[ &lt;A href=&apos;https://github.com/QuoInsight/minimal.apk&apos;>src&lt;/A> ]&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;[ &amp;lt;A href=&apos;https://github.com/QuoInsight/minimal.apk&apos;&amp;gt;src&amp;lt;/A&amp;gt; ]&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/calendaractivity.xml"
+            line="62"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Hello from CompassActivity!&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;Hello from CompassActivity!&quot; android:textSize=&quot;14dp&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="29"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;🧭 Orientation ✳:\n ??&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;🧭 Orientation ✳:\n ??&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="46"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;StartCompass&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;StartCompass&quot; android:textAllCaps=&quot;false&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="52"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;ManualConfiguration&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;ManualConfiguration&quot; android:textAllCaps=&quot;false&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="58"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;locPrvdr: &quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;locPrvdr: &quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="69"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;coarse&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;coarse&quot; android:onClick=&quot;onLocPrvdrRadioButtonClicked&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="73"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;gps&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;gps&quot; android:onClick=&quot;onLocPrvdrRadioButtonClicked&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="77"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;network&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;network&quot; android:onClick=&quot;onLocPrvdrRadioButtonClicked&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="81"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;snsrTyp: &quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;snsrTyp: &quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="93"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;orient&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;orient&quot; android:onClick=&quot;onSensorTypeRadioButtonClicked&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="97"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;acclMgnt&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;acclMgnt&quot; android:onClick=&quot;onSensorTypeRadioButtonClicked&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="101"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;gps&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;gps&quot; android:onClick=&quot;onSensorTypeRadioButtonClicked&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="105"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;⎗ Previous&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;⎗ Previous&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="112"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;⏏ Quit&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;⏏ Quit&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="118"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Note: sun &amp; moon positions shown above are defaulted to a fix location for Penang Int&apos;l Airport. you may enable GPS manually and use the above locPrvdr options to fetch your current location instead.&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;Note: sun &amp;amp; moon positions shown above are defaulted to a fix location for Penang Int&apos;l Airport. you may enable GPS manually and use the above locPrvdr options to fetch your current location instead.&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="126"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;[ &lt;A href=&apos;https://github.com/QuoInsight/minimal.apk&apos;>src&lt;/A> ]&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;[ &amp;lt;A href=&apos;https://github.com/QuoInsight/minimal.apk&apos;&amp;gt;src&amp;lt;/A&amp;gt; ]&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compassactivity.xml"
+            line="133"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Hello from CompassActivity!&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;Hello from CompassActivity!&quot; android:textSize=&quot;14dp&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="29"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;🧭 Orientation ✳:\n ??&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;🧭 Orientation ✳:\n ??&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="46"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;ManualCorrection&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;ManualCorrection&quot; android:textAllCaps=&quot;false&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="52"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;locPrvdr: &quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;locPrvdr: &quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="63"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;coarse&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;coarse&quot; android:onClick=&quot;onLocPrvdrRadioButtonClicked&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="67"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;gps&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;gps&quot; android:onClick=&quot;onLocPrvdrRadioButtonClicked&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="71"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;network&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;network&quot; android:onClick=&quot;onLocPrvdrRadioButtonClicked&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="75"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;snsrTyp: &quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;snsrTyp: &quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="87"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;orient&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;orient&quot; android:onClick=&quot;onSensorTypeRadioButtonClicked&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="91"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;acclMgnt&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;acclMgnt&quot; android:onClick=&quot;onSensorTypeRadioButtonClicked&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="95"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;gps&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;gps&quot; android:onClick=&quot;onSensorTypeRadioButtonClicked&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="99"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;⏏ Quit&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;⏏ Quit&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="106"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Note: sun &amp; moon positions shown above are defaulted to a fix location for Penang Int&apos;l Airport. you may enable GPS manually and use the above locPrvdr options to fetch your current location instead.&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;Note: sun &amp;amp; moon positions shown above are defaulted to a fix location for Penang Int&apos;l Airport. you may enable GPS manually and use the above locPrvdr options to fetch your current location instead.&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="114"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;[ &lt;A href=&apos;https://github.com/QuoInsight/minimal.apk&apos;>src&lt;/A> ]&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;[ &amp;lt;A href=&apos;https://github.com/QuoInsight/minimal.apk&apos;&amp;gt;src&amp;lt;/A&amp;gt; ]&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/compasscfgactivity.xml"
+            line="121"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Hello from OtherActivity!&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;Hello from OtherActivity!&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/listcfgactivity.xml"
+            line="29"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;\nList of Stations:&quot;, should use `@string` resource"
+        errorLine1="    &lt;TextView android:text=&quot;\nList of Stations:&quot; android:textSize=&quot;12sp&quot;"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/listcfgactivity.xml"
+            line="32"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;\n\n&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;\n\n&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/listcfgactivity.xml"
+            line="57"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;💾Save 🔄Update ⛝Close&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;💾Save 🔄Update ⛝Close&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/listcfgactivity.xml"
+            line="63"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;&lt;br>[ &lt;A href=&apos;https://docs.google.com/spreadsheets/d/1cj66AnWNgJ3GqDTIQBWeUEsapjp_Zk37v11iwoa8xzM/edit#gid=0&apos;>LiveOnline&lt;/A> ]&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;&amp;lt;br&amp;gt;[ &amp;lt;A href=&apos;https://docs.google.com/spreadsheets/d/1cj66AnWNgJ3GqDTIQBWeUEsapjp_Zk37v11iwoa8xzM/edit#gid=0&apos;&amp;gt;LiveOnline&amp;lt;/A&amp;gt; ]&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/listcfgactivity.xml"
+            line="70"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;▶&quot;, should use `@string` resource"
+        errorLine1="    android:text=&quot;▶&quot; android:textAllCaps=&quot;false&quot; android:padding=&quot;1dp&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer.xml"
+            line="20"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;⏹&quot;, should use `@string` resource"
+        errorLine1="    android:text=&quot;⏹&quot; android:textAllCaps=&quot;false&quot; android:padding=&quot;1dp&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer.xml"
+            line="25"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;🌐&quot;, should use `@string` resource"
+        errorLine1="    android:text=&quot;🌐&quot; android:textAllCaps=&quot;false&quot; android:padding=&quot;1dp&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer.xml"
+            line="30"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;⏮&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;⏮&quot; android:textAllCaps=&quot;false&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="13"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;⏪&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;⏪&quot; android:textAllCaps=&quot;false&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="18"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;⏩&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;⏩&quot; android:textAllCaps=&quot;false&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="35"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;⏭&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;⏭&quot; android:textAllCaps=&quot;false&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="40"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;📻&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;📻&quot; android:textSize=&quot;14sp&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="50"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;🌐&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;🌐&quot; android:textSize=&quot;9sp&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="58"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;▶&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;▶&quot; android:textSize=&quot;14sp&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="65"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;⚙&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;⚙&quot; android:textSize=&quot;14sp&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="72"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;⏹&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;⏹&quot; android:textSize=&quot;14sp&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="85"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;⏱&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;⏱&quot; android:textSize=&quot;14sp&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="92"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;🎧&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;🎧&quot; android:textSize=&quot;14sp&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="97"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;🔉&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;🔉&quot; android:textSize=&quot;11sp&quot; android:layout_margin=&quot;0dp&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="110"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;🔊&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;🔊&quot; android:textSize=&quot;11sp&quot; android:layout_margin=&quot;0dp&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="122"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;About&quot;, should use `@string` resource"
+        errorLine1="    android:title=&quot;About&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/menu/menu.xml"
+            line="15"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Quit&quot;, should use `@string` resource"
+        errorLine1="    android:title=&quot;Quit&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/menu/menu.xml"
+            line="19"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Hello from OtherActivity!&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;Hello from OtherActivity!&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="29"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;▶&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;▶&quot; android:textAllCaps=&quot;false&quot; android:padding=&quot;1dp&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="45"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;ⓘ&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;ⓘ&quot; android:textAllCaps=&quot;false&quot; android:padding=&quot;1dp&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="50"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;🌐&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;🌐&quot; android:textAllCaps=&quot;false&quot; android:padding=&quot;1dp&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="55"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;⚙&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;⚙&quot; android:textAllCaps=&quot;false&quot; android:padding=&quot;1dp&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="60"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;List of Installed Apps:&quot;, should use `@string` resource"
+        errorLine1="    &lt;TextView android:text=&quot;List of Installed Apps:&quot; android:textSize=&quot;12sp&quot;"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="65"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;\nList of Sensors:&quot;, should use `@string` resource"
+        errorLine1="    &lt;TextView android:text=&quot;\nList of Sensors:&quot; android:textSize=&quot;12sp&quot;"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="77"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot; &quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot; &quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="93"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;⎗ Previous&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;⎗ Previous&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="99"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;⏏ Quit&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;⏏ Quit&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="105"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;[ &lt;A href=&apos;https://github.com/QuoInsight/minimal.apk&apos;>src&lt;/A> ]&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;[ &amp;lt;A href=&apos;https://github.com/QuoInsight/minimal.apk&apos;&amp;gt;src&amp;lt;/A&amp;gt; ]&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="112"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Use &quot;`start`&quot; instead of &quot;`left`&quot; to ensure correct behavior in right-to-left locales"
+        errorLine1="        android:lines=&quot;15&quot; android:gravity=&quot;top|left&quot;"
+        errorLine2="                                            ~~~~~~~~">
+        <location
+            file="src/main/res/layout/listcfgactivity.xml"
+            line="48"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;6dp&quot;` to better support right-to-left layouts"
+        errorLine1="      android:layout_marginRight=&quot;6dp&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="53"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;6dp&quot;` to better support right-to-left layouts"
+        errorLine1="      android:layout_marginRight=&quot;6dp&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="59"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;6dp&quot;` to better support right-to-left layouts"
+        errorLine1="      android:layout_marginRight=&quot;6dp&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="66"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;6dp&quot;` to better support right-to-left layouts"
+        errorLine1="        android:layout_marginRight=&quot;6dp&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="73"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;6dp&quot;` to better support right-to-left layouts"
+        errorLine1="      android:layout_marginRight=&quot;6dp&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="86"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;6dp&quot;` to better support right-to-left layouts"
+        errorLine1="      android:layout_marginLeft=&quot;6dp&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/mainplayer2.xml"
+            line="100"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Use &quot;`start`&quot; instead of &quot;`left`&quot; to ensure correct behavior in right-to-left locales"
+        errorLine1="      android:lines=&quot;5&quot; android:gravity=&quot;top|left&quot;"
+        errorLine2="                                         ~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="73"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Use &quot;`start`&quot; instead of &quot;`left`&quot; to ensure correct behavior in right-to-left locales"
+        errorLine1="      android:lines=&quot;5&quot; android:gravity=&quot;top|left&quot;"
+        errorLine2="                                         ~~~~~~~~">
+        <location
+            file="src/main/res/layout/otheractivity.xml"
+            line="85"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="RtlEnabled"
+        message="The project references RTL attributes, but does not explicitly enable or disable RTL support with `android:supportsRtl` in the manifest">
+        <location
+            file="src/main/AndroidManifest.xml"/>
+    </issue>
+
+</issues>
